@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabna3D</title>
-  <!-- Tailwind CSS por CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabna3D</title>
+    <!-- Tailwind CSS por CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
 
-  <!-- Header / Navbar -->
-  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold tracking-wide">Mi Tienda</h1>
-      
-      <!-- Botón Carrito -->
-      <button id="cart-btn" onclick="toggleCart()" class="relative bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium transition flex items-center gap-2">
-        <span>🛒 Carrito</span>
-        <span id="cart-count" class="bg-white text-emerald-700 font-bold px-2 py-0.5 rounded-full text-xs">0</span>
-      </button>
-    </div>
-  </header>
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
 
+            <!-- LOGO Y NOMBRE DE LA TIENDA -->
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo de mi tienda" class="h-10 w-10 rounded-full object-cover border border-slate-700">
+                <h1 class="text-xl font-bold tracking-wide">Fabna3D</h1>
+            </div>
+
+            <!-- Botón Carrito -->
+            <button id="cart-btn" onclick="toggleCart()" class="relative bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium transition flex items-center gap-2">
+                <span>🛒 Carrito</span>
+                <span id="cart-count" class="bg-white text-emerald-700 font-bold px-2 py-0.5 rounded-full text-xs">0</span>
+            </button>
+
+        </div>
+    </header>
+  
   <!-- Catálogo de Productos -->
   <main class="max-w-6xl mx-auto px-4 py-8">
     <h2 class="text-2xl font-bold mb-6 text-gray-900">Nuestros Productos</h2>
